@@ -31,3 +31,36 @@ document.write(
 		tablica.indexOf(wybranyElement) +
 		'</p>'
 );
+
+// Etap 1: własna tablica, pierwszy i ostatni element oraz unshift().
+const nowaTablica = ['Warszawa', 'Gdańsk', 'Kraków', 'Wrocław'];
+
+document.write('<p>Pierwszy element to <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+document.write('<p>Ostatni element to <strong>');
+document.write(nowaTablica[nowaTablica.length - 1] + '</strong></p>');
+
+nowaTablica.unshift('Elbląg');
+document.write('<p>Pierwszy element po unshift() to <strong>');
+document.write(nowaTablica[0] + '</strong></p>');
+
+// Etap 2: usuwanie elementów i odczyt zwróconych wartości.
+const usunietyOstatni = nowaTablica.pop();
+const usunietyPierwszy = nowaTablica.shift();
+
+document.write('<p>Usunięto przez pop(): ' + usunietyOstatni + '</p>');
+document.write('<p>Usunięto przez shift(): ' + usunietyPierwszy + '</p>');
+document.write('<p>W tablicy zostało: ' + nowaTablica.join(', ') + '</p>');
+
+// Etap 3: tablica par [nazwa, ocena].
+const oceny = [
+    ['JavaScript', 5],
+    ['Git', 4],
+    ['HTML', 5]
+];
+
+console.log(oceny[1]);
+console.log(oceny[1][0]);
+console.log(oceny[1][1]);
+
+document.write('<p>Drugi element tablicy ocen: ' + oceny[1][0] + ', ocena: ' + oceny[1][1] + '</p>');
