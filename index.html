@@ -24,6 +24,9 @@
 <script src="js/jquery.easing.1.3.min.js"></script>
 <script src="js/jquery.easing.compatibility.js"></script>
 
+<script src="js/kacper.js" defer></script>
+<script src="js/powitanie.js" defer></script>
+
 
 </head>
 
@@ -132,6 +135,10 @@
 			<div id="skrypty">
 			<h3>Zadanie 1 – ładowanie skryptów</h3>
 			<!-- Osoba A: kod zadania 1 -->
+			<p>Skrypty bez atrybutów zatrzymują parsowanie strony i wykonują się w kolejności występowania, zanim powstanie dalsza część dokumentu.
+			Atrybut defer pozwala pobierać skrypty podczas parsowania, ale uruchamia je dopiero po jego zakończeniu, zachowując ich kolejność.
+			Atrybut async uruchamia każdy skrypt, gdy tylko zostanie pobrany, więc nie gwarantuje kolejności wykonania ani dostępności elementów DOM.
+			Metoda document.write zapisuje treść w bieżącym miejscu pracy parsera, dlatego przy defer i async może być ignorowana przez przeglądarkę; należy zamiast niej tworzyć elementy DOM i dodawać tekst przez textContent.</p>
 			</div>
 			<div id="tablice">
 			<h3>Zadania 2 i 3 – tablice</h3>
