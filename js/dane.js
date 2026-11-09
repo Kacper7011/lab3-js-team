@@ -42,3 +42,14 @@ for (const element of nowaTablica) {
 	opisyElementow.push(element + " (liczba znaków: " + policzZnaki(element) + ")");
 }
 akapitDlugosci.textContent = opisyElementow.join(", ");
+
+function pokazDane() {
+	const odczytaneDane = [];
+	for (const pole of pola) {
+		const wartosc = document.getElementById(pole).textContent;
+		odczytaneDane.push(pole + ": " + wartosc);
+	}
+	alert(odczytaneDane.join("\n"));
+}
+
+document.getElementById("pokazDane").addEventListener("click", pokazDane);
