@@ -31,3 +31,14 @@ for (let i = srodek; i < tablica.length; i++) {
 	}
 	akapitFor.textContent += tablica[i];
 }
+
+function policzZnaki(tekst) {
+	return tekst.length;
+}
+
+const akapitDlugosci = document.getElementById("dlugosci");
+const opisyElementow = [];
+for (const element of nowaTablica) {
+	opisyElementow.push(element + " (liczba znaków: " + policzZnaki(element) + ")");
+}
+akapitDlugosci.textContent = opisyElementow.join(", ");
