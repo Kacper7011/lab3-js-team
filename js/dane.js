@@ -1,9 +1,9 @@
 const zespol = [
 	["Siemieniako", "Kacper", "1", "kacper.siemieniako@example.com", "21560"],
-	["???", "???", "?", "???", "???"], // Dane uzupełni Osoba B.
+	["Chmielewski", "Jakub", "1", "jakub.chmielewski@example.com", "21432"],
 ];
 
-// Grupa i e-mail Osoby A są przykładowe.
+// Grupy i adresy e-mail obu osób są przykładowe.
 const pola = ["nazwisko", "imie", "grupa", "email", "indeks"];
 
 for (let i = 0; i < pola.length; i++) {
